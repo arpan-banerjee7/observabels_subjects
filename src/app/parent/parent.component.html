@@ -1,0 +1,13 @@
+<div class="text-center">
+  <ul class="list-group" *ngFor="let photo of photoList">
+    <li class="list-group-item">
+      {{ photo.title }}
+    </li>
+    <button
+      class="btn btn-primary"
+      (click)="displayName(photo.id, photo.url, photo.thumbnailUrl)"
+    >
+      Details
+    </button>
+  </ul>
+</div>
